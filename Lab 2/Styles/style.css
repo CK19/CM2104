@@ -10,3 +10,7 @@ header,section,article,nav,aside,footer,div {
   padding: 10px;
   margin: 10px;
 }
+
+.warning{font-weight: bold;}
+
+#first-para{font-weight: bold;}
