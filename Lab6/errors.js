@@ -10,6 +10,6 @@ function main () {
 	c = a * b;
 
 	document.writeln(c);
-}
 
-console.log(argument);
+	console.log(argument);
+}
