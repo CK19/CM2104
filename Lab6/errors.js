@@ -11,4 +11,4 @@ function main () {
 	document.writeln(c);
 }
 
-console.log(argument);
+console.log(Argument);
