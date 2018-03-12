@@ -1,6 +1,6 @@
-$(function(){
+$(document).ready(function(){
 	$('#addcontent').click(function(){
-		$(addContent());
+		addContent()
 	});
 	// 'main' function called when page is loaded and ready
 
@@ -18,11 +18,16 @@ function addContent () {
 	// build the html string for a <ul> list
 	var items_html = "<ul>";
 	for (var i=0; i < items.length; i++) {
-		item = items[i];
-		items_html += "<li>" + item + "</li>";
+		itemType = document.createElement("p");
+		itemText = document.createTextNode(items[i]);
+		itemType.appendChild(itemText);
+		document.getElementById('content').appendChild(itemType);
 	};
 	items_html += "</ul>";
 
+	$(document).ready(function(){
+		$('content').append(items_html)
+	});
 	// using jQuery
 	// 1. find the content div
 	// 2. modify its html attribute by adding items_html
