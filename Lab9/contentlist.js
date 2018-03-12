@@ -1,7 +1,7 @@
 $(function(){
 	$('#addcontent').click(function(){
-		$(addContent())
-	}
+		$(addContent());
+	});
 	// 'main' function called when page is loaded and ready
 
 	// complete the following using jQuery
